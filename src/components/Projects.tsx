@@ -42,7 +42,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section className="py-16 px-4" id="projects">
+    <section className="py-12 px-4" id="projects">
       <h2 className="text-4xl font-bold text-center mb-12 text-space-purple animate-glow">
         Projects
       </h2>

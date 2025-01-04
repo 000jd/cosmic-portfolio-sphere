@@ -30,7 +30,7 @@ const skills = {
 
 export const Skills = () => {
   return (
-    <div className="min-h-screen bg-space-dark py-20 px-4">
+    <div className="bg-space-dark py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-space-purple to-space-cyan">
           Technical Skills
