@@ -1,11 +1,15 @@
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
+import { HeroAnimation } from "./HeroAnimation";
 
 export const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-space-dark">
       {/* Background stars */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-space-purple/20 via-space-dark to-space-darker" />
+      
+      {/* 3D Animation */}
+      <HeroAnimation />
       
       {/* Content container */}
       <div className="relative z-10 text-center p-8">
