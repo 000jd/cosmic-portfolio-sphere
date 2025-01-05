@@ -12,6 +12,7 @@ export const HeroAnimation = () => {
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x000000, 0);
     mountRef.current.appendChild(renderer.domElement);
 
     // Create colorful geometric shapes
@@ -47,10 +48,10 @@ export const HeroAnimation = () => {
     scene.add(particlesMesh);
 
     // Lighting
-    const ambientLight = new THREE.AmbientLight(0x404040);
+    const ambientLight = new THREE.AmbientLight(0x404040, 2);
     scene.add(ambientLight);
     
-    const pointLight = new THREE.PointLight(0xffffff, 1);
+    const pointLight = new THREE.PointLight(0xffffff, 2);
     pointLight.position.set(25, 25, 25);
     scene.add(pointLight);
 
@@ -88,5 +89,5 @@ export const HeroAnimation = () => {
     };
   }, []);
 
-  return <div ref={mountRef} className="absolute inset-0 -z-10" />;
+  return <div ref={mountRef} className="w-full h-full" />;
 };
