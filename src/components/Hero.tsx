@@ -16,10 +16,12 @@ export const Hero = () => {
       {/* Content container */}
       <div className="relative z-10 text-center p-8">
         <div className="animate-slide-up backdrop-blur-sm bg-black/20 p-8 rounded-lg">
-          <h1 className="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-space-purple to-space-cyan animate-glow">
+          <h1 className="font-pixel text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-space-purple to-space-cyan animate-glow tracking-wider">
             JOYDIP DAS
           </h1>
-          <p className="text-2xl text-gray-300 mb-8">Engineer ~ Student</p>
+          <p className="font-pixel text-lg md:text-2xl text-gray-300 mb-8 tracking-wide">
+            Engineer ~ Student
+          </p>
           
           {/* Contact buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
