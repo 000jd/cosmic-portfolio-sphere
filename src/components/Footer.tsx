@@ -43,7 +43,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="text-center md:text-right">
-          <p className="font-pixel text-gray-400">© 2024 JOYDIP DAS</p>
+          <p className="font-pixel text-gray-400">© 2025 JOYDIP DAS</p>
           <p className="font-pixel text-gray-500 text-sm">All rights reserved</p>
         </div>
       </div>

@@ -44,7 +44,7 @@ export const Hero = () => {
             <Button
               variant="outline"
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
-              onClick={() => window.open("https://github.com/yourusername")}
+              onClick={() => window.open("https://github.com/000jd")}
             >
               <Github className="mr-2 h-4 w-4" />
               GitHub
@@ -52,7 +52,7 @@ export const Hero = () => {
             <Button
               variant="outline"
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
-              onClick={() => window.open("https://linkedin.com/in/yourusername")}
+              onClick={() => window.open("https://linkedin.com//in/joydip-das-61ab731b5/")}
             >
               <Linkedin className="mr-2 h-4 w-4" />
               LinkedIn
@@ -62,7 +62,7 @@ export const Hero = () => {
           {/* Resume button */}
           <Button
             className="bg-space-purple hover:bg-space-purple/80 text-white px-8 py-6 rounded-full animate-float"
-            onClick={() => window.open("/resume.pdf")}
+            onClick={() => window.open("https://drive.google.com/file/d/1UaJp3k3enOpESBkDhGcc7oomPyc43jR6/view?usp=sharing")}
           >
             Download Resume
           </Button>
