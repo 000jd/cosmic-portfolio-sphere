@@ -15,7 +15,6 @@ export const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle the form submission
     console.log("Form submitted:", formData);
     toast.success("Message sent successfully!");
     setFormData({ email: "", subject: "", message: "" });
@@ -23,18 +22,18 @@ export const Contact = () => {
 
   return (
     <section className="py-16 px-4" id="contact">
-      <h2 className="text-4xl font-bold text-center mb-12 text-space-purple animate-glow">
+      <h2 className="font-pixel text-4xl font-bold text-center mb-12 text-space-purple animate-glow">
         Contact Me
       </h2>
       <Card className="max-w-2xl mx-auto bg-space-darker/50 backdrop-blur-sm border-space-purple/20">
         <CardHeader>
-          <CardTitle className="text-space-purple">Get in Touch</CardTitle>
-          <CardDescription>Send me a message and I'll get back to you as soon as possible.</CardDescription>
+          <CardTitle className="font-pixel text-space-purple">Get in Touch</CardTitle>
+          <CardDescription className="font-pixel">Send me a message and I'll get back to you as soon as possible.</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
-              <label className="text-sm text-gray-400 flex items-center gap-2">
+              <label className="font-pixel text-sm text-gray-400 flex items-center gap-2">
                 <Mail className="h-4 w-4" /> Email
               </label>
               <Input
@@ -42,12 +41,12 @@ export const Contact = () => {
                 placeholder="your@email.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="bg-space-dark/50 border-space-purple/20 focus:border-space-purple"
+                className="font-pixel bg-space-dark/50 border-space-purple/20 focus:border-space-purple"
                 required
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm text-gray-400 flex items-center gap-2">
+              <label className="font-pixel text-sm text-gray-400 flex items-center gap-2">
                 <MessageSquare className="h-4 w-4" /> Subject
               </label>
               <Input
@@ -55,25 +54,25 @@ export const Contact = () => {
                 placeholder="What's this about?"
                 value={formData.subject}
                 onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                className="bg-space-dark/50 border-space-purple/20 focus:border-space-purple"
+                className="font-pixel bg-space-dark/50 border-space-purple/20 focus:border-space-purple"
                 required
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm text-gray-400 flex items-center gap-2">
+              <label className="font-pixel text-sm text-gray-400 flex items-center gap-2">
                 <MessageSquare className="h-4 w-4" /> Message
               </label>
               <Textarea
                 placeholder="Your message here..."
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="bg-space-dark/50 border-space-purple/20 focus:border-space-purple min-h-[150px]"
+                className="font-pixel bg-space-dark/50 border-space-purple/20 focus:border-space-purple min-h-[150px]"
                 required
               />
             </div>
             <Button
               type="submit"
-              className="w-full bg-space-purple hover:bg-space-purple/90 text-white"
+              className="w-full bg-space-purple hover:bg-space-purple/90 text-white font-pixel"
             >
               <Send className="mr-2 h-4 w-4" /> Send Message
             </Button>

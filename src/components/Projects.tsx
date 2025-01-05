@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Globe, Package } from "lucide-react";
+import { Github, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 
 const projects = [
@@ -43,26 +43,26 @@ const projects = [
 export const Projects = () => {
   return (
     <section className="py-12 px-4" id="projects">
-      <h2 className="text-4xl font-bold text-center mb-12 text-space-purple animate-glow">
+      <h2 className="font-pixel text-4xl font-bold text-center mb-12 text-space-purple animate-glow">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {projects.map((project, index) => (
           <Card key={index} className="bg-space-darker/50 backdrop-blur-sm border-space-purple/20 hover:border-space-purple/50 transition-all duration-300 group">
             <CardHeader>
-              <CardTitle className="text-space-purple group-hover:text-space-cyan transition-colors">
+              <CardTitle className="font-pixel text-space-purple group-hover:text-space-cyan transition-colors">
                 {project.title}
               </CardTitle>
-              <CardDescription className="text-gray-400">
+              <CardDescription className="font-pixel text-gray-400">
                 {project.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-gray-400 mb-4">{project.tools}</p>
+              <p className="font-pixel text-sm text-gray-400 mb-4">{project.tools}</p>
               <div className="flex gap-4">
                 <Button
                   variant="outline"
-                  className="flex-1 bg-transparent border-space-purple/50 hover:border-space-purple hover:bg-space-purple/10"
+                  className="flex-1 bg-transparent border-space-purple/50 hover:border-space-purple hover:bg-space-purple/10 font-pixel"
                   onClick={() => window.open(project.github, "_blank")}
                 >
                   <Github className="mr-2" />
@@ -70,7 +70,7 @@ export const Projects = () => {
                 </Button>
                 <Button
                   variant="outline"
-                  className="flex-1 bg-transparent border-space-cyan/50 hover:border-space-cyan hover:bg-space-cyan/10"
+                  className="flex-1 bg-transparent border-space-cyan/50 hover:border-space-cyan hover:bg-space-cyan/10 font-pixel"
                   onClick={() => window.open(project.demo, "_blank")}
                 >
                   <Globe className="mr-2" />
