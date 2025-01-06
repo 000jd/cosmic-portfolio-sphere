@@ -52,7 +52,7 @@ export const Hero = () => {
             <Button
               variant="outline"
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
-              onClick={() => window.open("https://linkedin.com//in/joydip-das-61ab731b5/")}
+              onClick={() => window.open("https://linkedin.com/in/joydip-das-61ab731b5/")}
             >
               <Linkedin className="mr-2 h-4 w-4" />
               LinkedIn
