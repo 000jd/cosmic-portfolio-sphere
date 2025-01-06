@@ -9,11 +9,11 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-space-purple/5 via-space-dark to-space-darker" />
         
         {/* Large planet */}
-        <div className="absolute left-3/4 top-1/4 w-[20vw] h-[20vw] rounded-full bg-gradient-to-br from-space-purple/30 to-space-cyan/30 animate-float-reverse shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.5)]" />
+        <div className="absolute left-3/4 top-1/4 w-[40vw] h-[40vw] rounded-full bg-gradient-to-br from-space-purple/30 to-space-cyan/30 animate-float-reverse shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.5)]" />
         
         {/* Small orbiting planets */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="w-[5vw] h-[5vw] rounded-full bg-gradient-to-br from-space-orange/40 to-space-purple/40 animate-orbit" />
+          <div className="w-[20vw] h-[20vw] rounded-full bg-gradient-to-br from-space-orange/40 to-space-purple/40 animate-orbit" />
           <div className="w-[3vw] h-[3vw] rounded-full bg-gradient-to-br from-space-cyan/40 to-space-purple/40 animate-orbit-reverse" 
                style={{ animationDelay: "-5s" }} />
         </div>
@@ -28,11 +28,11 @@ export const Hero = () => {
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDelay: `${i * 2}s`,
+              animationDelay: `${i * 1}s`,
               transform: `rotate(${45 + Math.random() * 30}deg)`,
             }}
           >
-            <div className="w-[100px] h-[1px] bg-gradient-to-r from-transparent via-space-orange to-transparent" />
+            <div className="w-[70px] h-[1px] bg-gradient-to-r from-transparent via-space-orange to-transparent" />
           </div>
         ))}
       </div>
