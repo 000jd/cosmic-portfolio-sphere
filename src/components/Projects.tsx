@@ -18,7 +18,7 @@ const projects = [
     demo: "https://plant-diseases-demo.com",
   },
   {
-    title: "Depression Classification with BERT",
+    title: "Depression Categories Datection with BERT",
     description: "Employed BERT transformers to classify 5 distinct depression classes. Achieved 94.59% training accuracy and 85.99% validation accuracy. Demonstrated the model\'s potential for mental health assessment.",
     tools: "BERT, Transformers, NLP",
     github: "https://github.com/000jd/",
