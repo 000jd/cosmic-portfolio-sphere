@@ -27,7 +27,7 @@ export const Achievements = () => {
   return (
     <section className="py-12 px-4" id="achievements">
       <h2 className="font-pixel text-4xl font-bold text-center mb-12 text-space-purple animate-glow">
-        Achievements
+      Highlights
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {achievements.map((achievement, index) => (
