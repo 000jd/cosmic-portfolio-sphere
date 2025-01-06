@@ -5,17 +5,32 @@ import { HeroAnimation } from "./HeroAnimation";
 export const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-space-dark">
-      {/* Background stars */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-space-purple/20 via-space-dark to-space-darker opacity-50" />
-      
-      {/* 3D Animation */}
+      {/* Black hole effect */}
       <div className="absolute inset-0">
-        <HeroAnimation />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-space-purple/5 via-space-dark to-space-darker" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] rounded-full bg-black shadow-[0_0_200px_100px_rgba(0,0,0,0.9)] animate-spin-slow" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[30vw] h-[30vw] rounded-full bg-space-darker shadow-[0_0_150px_75px_rgba(0,0,0,0.8)] animate-spin-slow" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[20vw] h-[20vw] rounded-full bg-space-dark shadow-[0_0_100px_50px_rgba(0,0,0,0.7)] animate-orbit-reverse" />
+      </div>
+      
+      {/* Animated particles */}
+      <div className="absolute inset-0">
+        {Array.from({ length: 20 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white rounded-full animate-twinkle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+            }}
+          />
+        ))}
       </div>
       
       {/* Content container */}
       <div className="relative z-10 text-center p-8">
-        <div className="animate-slide-up backdrop-blur-sm bg-black/20 p-8 rounded-lg">
+        <div className="animate-slide-up backdrop-blur-sm bg-black/40 p-8 rounded-lg border border-space-purple/20">
           <h1 className="font-pixel text-4xl md:text-6xl font-bold mb-4 text-white/90 tracking-wider">
             JOYDIP DAS
           </h1>
@@ -85,7 +100,7 @@ export const Hero = () => {
         </div>
       </div>
       
-      {/* Decorative elements */}
+      {/* Bottom gradient */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-space-darker to-transparent" />
     </div>
   );
