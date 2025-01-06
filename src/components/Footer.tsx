@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Instagram, Link2 } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -40,6 +40,24 @@ export const Footer = () => {
             aria-label="LinkedIn"
           >
             <Linkedin className="h-6 w-6" />
+          </a>
+          <a
+            href="https://instagram.com/joydip.das.00"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-space-purple transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram className="h-6 w-6" />
+          </a>
+          <a
+            href="https://blog.joydip.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-space-purple transition-colors"
+            aria-label="Blog"
+          >
+            <Link2 className="h-6 w-6" />
           </a>
         </div>
         <div className="text-center md:text-right">

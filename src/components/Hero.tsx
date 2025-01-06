@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Instagram, Link2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { HeroAnimation } from "./HeroAnimation";
 
@@ -56,6 +56,22 @@ export const Hero = () => {
             >
               <Linkedin className="mr-2 h-4 w-4" />
               LinkedIn
+            </Button>
+            <Button
+              variant="outline"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
+              onClick={() => window.open("https://instagram.com/joydip.das.00")}
+            >
+              <Instagram className="mr-2 h-4 w-4" />
+              Instagram
+            </Button>
+            <Button
+              variant="outline"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
+              onClick={() => window.open("https://blog.joydip.dev")}
+            >
+              <Link2 className="mr-2 h-4 w-4" />
+              Blog
             </Button>
           </div>
           
