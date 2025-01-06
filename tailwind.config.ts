@@ -104,6 +104,10 @@ export default {
           "0%": { transform: "rotate(360deg) translateX(100px) rotate(-360deg)" },
           "100%": { transform: "rotate(0deg) translateX(100px) rotate(0deg)" },
         },
+        meteor: {
+          "0%": { transform: "translateX(0) translateY(0)" },
+          "100%": { transform: "translateX(-500px) translateY(500px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -116,6 +120,7 @@ export default {
         twinkle: "twinkle 3s ease-in-out infinite",
         "float-reverse": "float-reverse 4s ease-in-out infinite",
         "orbit-reverse": "orbit-reverse 15s linear infinite",
+        "meteor": "meteor 5s linear infinite",
       },
     },
   },
