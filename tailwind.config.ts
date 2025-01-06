@@ -96,6 +96,14 @@ export default {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.2" },
         },
+        "float-reverse": {
+          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+          "50%": { transform: "translateY(-10px) rotate(5deg)" },
+        },
+        "orbit-reverse": {
+          "0%": { transform: "rotate(360deg) translateX(100px) rotate(-360deg)" },
+          "100%": { transform: "rotate(0deg) translateX(100px) rotate(0deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -106,6 +114,8 @@ export default {
         orbit: "orbit 20s linear infinite",
         "spin-slow": "spin-slow 20s linear infinite",
         twinkle: "twinkle 3s ease-in-out infinite",
+        "float-reverse": "float-reverse 4s ease-in-out infinite",
+        "orbit-reverse": "orbit-reverse 15s linear infinite",
       },
     },
   },

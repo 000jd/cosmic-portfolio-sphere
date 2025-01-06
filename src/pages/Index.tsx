@@ -6,11 +6,13 @@ import { Education } from "@/components/Education";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { SpaceBackground } from "@/components/SpaceBackground";
+import { SpaceParallax } from "@/components/SpaceParallax";
 
 const Index = () => {
   return (
     <div className="bg-space-dark text-white min-h-screen relative">
       <SpaceBackground />
+      <SpaceParallax />
       <div className="relative z-10">
         <Hero />
         <Skills />
