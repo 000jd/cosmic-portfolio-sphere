@@ -42,7 +42,7 @@ export const Footer = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a
-            href="https://instagram.com/joydip.das.00"
+            href="https://www.instagram.com/joydipdas856/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-space-purple transition-colors"
@@ -51,7 +51,7 @@ export const Footer = () => {
             <Instagram className="h-6 w-6" />
           </a>
           <a
-            href="https://blog.joydip.dev"
+            href="000jd.hashnode.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-space-purple transition-colors"

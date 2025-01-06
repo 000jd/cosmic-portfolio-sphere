@@ -60,7 +60,7 @@ export const Hero = () => {
             <Button
               variant="outline"
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
-              onClick={() => window.open("https://instagram.com/joydip.das.00")}
+              onClick={() => window.open("https://www.instagram.com/joydipdas856/")}
             >
               <Instagram className="mr-2 h-4 w-4" />
               Instagram
@@ -68,7 +68,7 @@ export const Hero = () => {
             <Button
               variant="outline"
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
-              onClick={() => window.open("https://blog.joydip.dev")}
+              onClick={() => window.open("000jd.hashnode.dev")}
             >
               <Link2 className="mr-2 h-4 w-4" />
               Blog
