@@ -7,6 +7,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { SpaceBackground } from "@/components/SpaceBackground";
 import { SpaceParallax } from "@/components/SpaceParallax";
+import { InstagramFeed } from "@/components/InstagramFeed";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <Projects />
         <Achievements />
         <Education />
+        <InstagramFeed />
         <Contact />
         <Footer />
       </div>
