@@ -8,20 +8,41 @@ export const Hero = () => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-space-purple/5 via-space-dark to-space-darker" />
         
-        {/* Large planet */}
+        {/* Large planets */}
         <div className="absolute left-3/4 top-1/4 w-[40vw] h-[40vw] rounded-full bg-gradient-to-br from-space-purple/30 to-space-cyan/30 animate-float-reverse shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.5)]" />
+        <div className="absolute left-1/4 top-3/4 w-[25vw] h-[25vw] rounded-full bg-gradient-to-br from-space-orange/30 to-space-purple/30 animate-float shadow-[inset_-10px_-10px_20px_rgba(0,0,0,0.5)]" />
         
         {/* Small orbiting planets */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="w-[20vw] h-[20vw] rounded-full bg-gradient-to-br from-space-orange/40 to-space-purple/40 animate-orbit" />
           <div className="w-[3vw] h-[3vw] rounded-full bg-gradient-to-br from-space-cyan/40 to-space-purple/40 animate-orbit-reverse" 
                style={{ animationDelay: "-5s" }} />
+          <div className="w-[5vw] h-[5vw] rounded-full bg-gradient-to-br from-space-purple/40 to-space-orange/40 animate-orbit" 
+               style={{ animationDelay: "-10s" }} />
         </div>
+      </div>
+      
+      {/* Asteroid Belt */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        {Array.from({ length: 30 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute animate-orbit"
+            style={{
+              width: `${Math.random() * 2 + 1}vw`,
+              height: `${Math.random() * 2 + 1}vw`,
+              animationDuration: `${15 + Math.random() * 10}s`,
+              transform: `rotate(${i * (360 / 30)}deg) translateX(${150 + Math.random() * 50}px)`,
+            }}
+          >
+            <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-600/40 to-gray-800/40 animate-spin-slow" />
+          </div>
+        ))}
       </div>
       
       {/* Moving meteors */}
       <div className="absolute inset-0 overflow-hidden">
-        {Array.from({ length: 5 }).map((_, i) => (
+        {Array.from({ length: 8 }).map((_, i) => (
           <div
             key={i}
             className="absolute animate-meteor"
@@ -39,7 +60,7 @@ export const Hero = () => {
       
       {/* Stars background */}
       <div className="absolute inset-0">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {Array.from({ length: 50 }).map((_, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-white rounded-full animate-twinkle"
