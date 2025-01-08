@@ -39,6 +39,54 @@ export const Hero = () => {
           </div>
         ))}
       </div>
+
+      {/* Astronauts floating around */}
+      {Array.from({ length: 5 }).map((_, i) => (
+        <div
+          key={`astronaut-${i}`}
+          className="absolute animate-float"
+          style={{
+            top: `${15 + i * 20}%`,
+            left: `${10 + i * 18}%`,
+            animationDelay: `${i * 0.5}s`,
+            zIndex: 1,
+          }}
+        >
+          <div className="text-4xl">👨‍🚀</div>
+        </div>
+      ))}
+
+      {/* Rockets flying */}
+      {Array.from({ length: 4 }).map((_, i) => (
+        <div
+          key={`rocket-${i}`}
+          className="absolute animate-float-reverse"
+          style={{
+            top: `${25 + i * 15}%`,
+            right: `${5 + i * 20}%`,
+            animationDelay: `${i * 0.7}s`,
+            zIndex: 1,
+          }}
+        >
+          <div className="text-4xl">🚀</div>
+        </div>
+      ))}
+
+      {/* Spaceships */}
+      {Array.from({ length: 3 }).map((_, i) => (
+        <div
+          key={`spaceship-${i}`}
+          className="absolute animate-float"
+          style={{
+            top: `${40 + i * 25}%`,
+            left: `${30 + i * 25}%`,
+            animationDelay: `${i * 1}s`,
+            zIndex: 1,
+          }}
+        >
+          <div className="text-4xl">🛸</div>
+        </div>
+      ))}
       
       {/* Moving meteors */}
       <div className="absolute inset-0 overflow-hidden">
